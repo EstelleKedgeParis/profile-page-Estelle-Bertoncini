@@ -1,0 +1,221 @@
+/* Write some CSS below */
+
+
+body{
+    text-align: center;
+    background-color: white;
+    font-size: 18px;
+    background: #136a8a; 
+    background: -webkit-linear-gradient(to bottom, #267871, #136a8a);  
+    background: linear-gradient(to bottom, #267871, #136a8a);
+}
+
+h1{
+    font-family: Lato;
+    color: white;
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+/* Présentation */
+
+h2, h3{
+    font-family: roboto;
+    color: rgb(86, 116, 154);
+    font-size: 24px;
+}
+
+ol{
+   padding-left: 0;
+   list-style: none; 
+}
+
+#profile{
+    border-radius: 30%;
+    width: 200px; 
+}
+
+p{
+    text-align: center;
+}
+
+.titre {
+    color: white;
+}
+
+#description {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.presentation {
+    padding: 0 30px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    background-color: #DFF1FF ;
+    box-shadow: 10px 20px 30px rgb(40,40, 40);
+    border-radius: 15px;
+    width: 900px;
+    margin: 45px auto;
+    margin-bottom: 70px;
+}
+
+.presentation,#MD, #GFF, #diplôme-elmi, #diplôme-kedge,.autres-experiences, .lang-skills {
+    transition: 0.5s;
+}
+
+.presentation:hover,#MD:hover, #GFF:hover, #diplôme-elmi:hover, #diplôme-kedge:hover,.autres-experiences:hover, .lang-skills:hover {
+     transform: scale(1.1);
+}
+
+.card-bleu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    padding-top: 5px;
+
+}
+
+.btn-linkedin{
+    color: aliceblue;
+    background-color: rgb(1, 47, 166);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin: 15px 0;
+}
+
+.btn-linkedin:hover{
+    background-color: black;
+}
+
+/* Mes diplômes */
+
+#diplôme-kedge, #diplôme-elmi,#MD, #GFF  {
+    padding: 30px;
+    padding-top: 5px;
+    background-color: #DFF1FF ;
+    box-shadow: 10px 20px 30px rgb(40,40, 40);
+    border-radius: 15px;
+    width: 380px;
+    margin: 45px auto;
+}
+
+
+/* Mes autres expériences */
+
+
+.autres-experiences {
+    padding: 30px;
+    padding-top: 5px;
+    background-color: #DFF1FF ;
+    box-shadow: 10px 20px 30px rgb(40,40, 40);
+    border-radius: 15px;
+    width: 900px;
+    margin: 40px auto;
+    margin-bottom: 110px;
+}
+
+/* langues et compétences */
+
+.lang-skills {
+    padding: 30px;
+    background-color: #DFF1FF ;
+    box-shadow: 10px 20px 30px rgb(40,40, 40);
+    border-radius: 15px;
+    width: 900px;
+    margin: 20px auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.compétences li, .langues li{
+    display: inline;
+    padding-left: 0px;
+}
+.cols {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0;
+}
+
+.lang div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.list-inline li {
+    display: inline;
+}
+
+.anglais div, .italien div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.gif {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    padding-left: 0px;
+}
+
+.logo-skills{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+ul {
+
+    padding-left: 0px;
+    margin: 10px;
+    list-style: none;
+    font-weight: 800;
+}
+
+.img-diplôme, .logo-entreprise {
+    height: 115px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+#logo-gff {
+    width: 120px;
+    height: 150px;
+    margin: 20px;
+}
+
+/* Contact form */
+
+
+.contact {
+    width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    padding-top: 5px;
+}
+
+/* footer */
+
+.réseaux {
+color: white ;
+}
+
+i{
+    color: aliceblue;
+    margin: 20px;
+    font-size: 50px
+}
+i:hover {
+
+    color : rgb(86, 116, 154);
+}
