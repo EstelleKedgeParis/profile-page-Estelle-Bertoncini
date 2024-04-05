@@ -1,221 +1,330 @@
 /* Write some CSS below */
 
+/* Section 1*/
 
-body{
-    text-align: center;
-    background-color: white;
-    font-size: 18px;
-    background: #136a8a; 
-    background: -webkit-linear-gradient(to bottom, #267871, #136a8a);  
-    background: linear-gradient(to bottom, #267871, #136a8a);
-}
-
-h1{
-    font-family: Lato;
-    color: white;
-    font-size: 32px;
-    margin: 30px 0;
-}
-
-/* Présentation */
-
-h2, h3{
-    font-family: roboto;
-    color: rgb(86, 116, 154);
-    font-size: 24px;
-}
-
-ol{
-   padding-left: 0;
-   list-style: none; 
-}
-
-#profile{
-    border-radius: 30%;
-    width: 200px; 
-}
-
-p{
-    text-align: center;
-}
-
-.titre {
-    color: white;
-}
-
-#description {
-    width: 60%;
-    margin: 30px auto;
-}
-
-.presentation {
-    padding: 0 30px;
-    padding-top: 5px;
-    padding-bottom: 40px;
-    background-color: #DFF1FF ;
-    box-shadow: 10px 20px 30px rgb(40,40, 40);
-    border-radius: 15px;
-    width: 900px;
-    margin: 45px auto;
-    margin-bottom: 70px;
-}
-
-.presentation,#MD, #GFF, #diplôme-elmi, #diplôme-kedge,.autres-experiences, .lang-skills {
-    transition: 0.5s;
-}
-
-.presentation:hover,#MD:hover, #GFF:hover, #diplôme-elmi:hover, #diplôme-kedge:hover,.autres-experiences:hover, .lang-skills:hover {
-     transform: scale(1.1);
-}
-
-.card-bleu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
-    width: 900px;
-    margin: 20px auto;
-    padding: 30px;
-    padding-top: 5px;
-
-}
-
-.btn-linkedin{
-    color: aliceblue;
-    background-color: rgb(1, 47, 166);
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 15px 25px;
-    margin: 15px 0;
-}
-
-.btn-linkedin:hover{
-    background-color: black;
-}
-
-/* Mes diplômes */
-
-#diplôme-kedge, #diplôme-elmi,#MD, #GFF  {
-    padding: 30px;
-    padding-top: 5px;
-    background-color: #DFF1FF ;
-    box-shadow: 10px 20px 30px rgb(40,40, 40);
-    border-radius: 15px;
-    width: 380px;
-    margin: 45px auto;
-}
-
-
-/* Mes autres expériences */
-
-
-.autres-experiences {
-    padding: 30px;
-    padding-top: 5px;
-    background-color: #DFF1FF ;
-    box-shadow: 10px 20px 30px rgb(40,40, 40);
-    border-radius: 15px;
-    width: 900px;
-    margin: 40px auto;
-    margin-bottom: 110px;
-}
-
-/* langues et compétences */
-
-.lang-skills {
-    padding: 30px;
-    background-color: #DFF1FF ;
-    box-shadow: 10px 20px 30px rgb(40,40, 40);
-    border-radius: 15px;
-    width: 900px;
-    margin: 20px auto;
-    margin-top: 70px;
-    margin-bottom: 80px;
-}
-
-.compétences li, .langues li{
-    display: inline;
-    padding-left: 0px;
-}
-.cols {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 0;
-}
-
-.lang div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 5px;
-}
-
-.list-inline li {
-    display: inline;
-}
-
-.anglais div, .italien div {
+body {
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(62deg, rgba(2,0,36,1) 0%, rgba(6,5,82,1) 5%, rgba(6,86,172,1) 57%, rgba(4,101,206,1) 66%, rgba(3,149,214,1) 79%, rgba(2,173,230,1) 87%, rgba(1,194,243,1) 94%, rgba(0,212,255,1) 100%);
+    font-family: "Monserrat", sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 0;
 }
 
-.gif {
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-    padding-left: 0px;
+.banner {
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.logo-skills{
-    width: 60px;
-    height: 60px;
-    margin: 20px;
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-ul {
-
-    padding-left: 0px;
-    margin: 10px;
-    list-style: none;
-    font-weight: 800;
-}
-
-.img-diplôme, .logo-entreprise {
-    height: 115px;
-    margin: 20px;
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-#logo-gff {
-    width: 120px;
-    height: 150px;
-    margin: 20px;
+.video-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Contact form */
+.video-content div {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgbA(255, 255, 255, 0.2);
 
+}
+
+.video-content div p {
+    margin-bottom: 50px;
+}
+
+h1{
+font-size: 54px;
+font-family: "Bebas Neue", sans-serif;
+letter-spacing: 4px;
+}
+
+.video-content p{
+    font-size: 24px;
+}
+
+.btn-blue {
+   
+    background: linear-gradient(62deg, rgba(2,0,36,1) 0%, rgba(6,5,82,1) 5%, rgba(6,86,172,1) 57%, rgba(4,101,206,1) 66%, rgba(3,149,214,1) 79%, rgba(2,173,230,1) 87%, rgba(1,194,243,1) 94%, rgba(0,212,255,1) 100%);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease;
+    display: inline table; /* Assurez-vous que le bouton est traité comme un bloc */
+    margin: 0 auto;
+    
+}
+
+.btn-blue:hover {
+    transform:scale(1.1);    
+}
+
+/* Section 2 */
+
+h2{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hôtels {
+    margin : 30px auto;
+    margin-top: 200px;
+    width : 900px;
+    height: 100%;
+}
+
+
+.card-white1 {
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+padding : 25px;
+margin: 20px 3px;
+background-color: white;
+border-radius : 4px;
+display: flex; /* Ajouté pour flexbox */
+    flex-direction: column; /* Orientation des enfants en colonne */
+    justify-content: space-between; /* Espace distribué entre les enfants */
+    align-items: flex-start; /* Alignement des enfants à gauche */
+}
+
+.card-white1 img {
+border-radius: 8px;
+width: 100%;
+height: 150px;
+object-fit: cover;
+margin-bottom: 15px; /* Espace après l'image */
+
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    /* margin: 30px 0; */
+
+}
+
+
+
+#cards-illustration {
+    grid-gap: 30px;
+}
+
+.effect1{
+    transition: 0.5s;
+}
+.effect1:hover{
+    box-shadow: 0 10px 20 px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.hotel-image {
+    transition: 0.5s;
+}
+
+.hotel-image:hover {
+    transform: scale(1.21);
+}
+
+.btn-découverte {
+margin: 25px 20px;
+align-self: center;
+background: transparent;
+border: solid rgb(0, 70, 227);
+padding: 15px 25px;
+border-radius: 15px;
+font-size: 18px;
+text-decoration: none;
+color: rgb(0, 70, 227);
+font-weight: 700;
+
+}
+
+.btn-découverte:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(62deg, rgba(2,0,36,1) 0%, rgba(6,5,82,1) 5%, rgba(6,86,172,1) 57%, rgba(4,101,206,1) 66%, rgba(3,149,214,1) 79%, rgba(2,173,230,1) 87%, rgba(1,194,243,1) 94%, rgba(0,212,255,1) 100%);
+    color: white;
+    border: solid rgb(255,255,255);
+}
+
+
+p{
+    margin: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.description{
+    text-align: left;
+}
+
+h4 {
+    text-align: left;
+}
+
+h3, h4, .description {
+    min-height: 70px; /* Ajustez selon le besoin */
+}
+
+.card-white1 > img, .card-white1 > h3, .card-white1 > h4, .card-white1 > .description {
+    margin-bottom: auto;
+}
+
+.titre-section {
+margin-bottom: 100px;
+}
+
+
+
+.personnages-disney, .parade {
+    margin : 30px auto;
+    margin-bottom: 50px;
+    width : 900px;
+    height: 100%;
+}
+
+/* Section 3 */
+
+.parade {
+    margin-bottom: 100px ;
+}
+
+.image-disney {
+
+    padding : 25px;
+    margin: 20px 3px;
+    border-radius : 5%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+
+}
+
+.image-disney img {
+    border-radius: 8px;
+    width: 250px;
+    height: 185px;
+    object-fit: cover;
+    margin-bottom: 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.illustration{
+    transition: 0.5s;
+}
+
+.illustration:hover{
+    box-shadow: 0 10px 20 px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.ytbvideo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ytbvideo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.ytbvideo video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.illustration {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact */
 
 .contact {
-    width: 900px;
-    margin: 20px auto;
-    padding: 30px;
-    padding-top: 5px;
+    margin-bottom: 50px;
 }
 
 /* footer */
 
-.réseaux {
-color: white ;
+.footer{
+margin-top: auto;
+background-color: white;
+border-radius: 5px;
+padding: 20px 0; /* Ajoutez du padding pour l'espace vertical */
+width: 100%;
+}
+
+#réseaux{
+    margin: 20px;
+    color: black;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.footer ul{
+    list-style: none; /* Enlève les puces de liste */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre les éléments flexibles horizontalement */
+    align-items: center; /* Centre les éléments flexibles verticalement */
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-weight:lighter ;
 }
 
 i{
-    color: aliceblue;
     margin: 20px;
-    font-size: 50px
+    margin-top : 15px;
+    transition: 0.3s;
 }
-i:hover {
 
-    color : rgb(86, 116, 154);
+i:hover{
+    color: rgb(0, 70, 227);
+    transform: scale(1.2);
 }
